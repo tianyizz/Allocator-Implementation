@@ -169,7 +169,7 @@ void free (void *ptr){
 	//if large size malloc
 	if((tagTemp->header->size)>MAXSIZE){
 		size_t sizeToFree=(size_t)(tagTemp->header->size)+sizeof(m)+sizeof(t);
-		munmap(ptr,sizeToFree);
+		munmap(ptr-sizeof(t)-sizeof(m),sizeToFree);
 		return;
 	}
 
