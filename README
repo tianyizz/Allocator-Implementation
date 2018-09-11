@@ -1,9 +1,0 @@
-Tianyi Zhang
-ECE3220
-
-
-Program 1: 
-
-Known Design: the program is to implement malloc, realloc, free, calloc using mmap and munmap. The program should do anything that the functions provided by system did.
-
-Known Problem: The program will have problems when dealing with large amounts of calloc, realloc, malloc, and free. The definite cause is unknown. I thought the problem was caused by inefficient memory usage but, after my program passed the efficiency test, I cannot think of any reasons anymore.
